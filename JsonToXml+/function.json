@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in",
+      "webHookType": "genericJson"
+    },
+    {
+      "name": "res",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "json-raw-ts/{rand-guid}",
+      "connection": "contosotraveller_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
